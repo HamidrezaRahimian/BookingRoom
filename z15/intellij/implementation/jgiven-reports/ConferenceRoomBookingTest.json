@@ -1,0 +1,162 @@
+{
+  "className": "ConferenceRoomBookingTest",
+  "name": "Conference Room Booking",
+  "scenarios": [
+    {
+      "className": "ConferenceRoomBookingTest",
+      "testMethodName": "room_should_be_available_for_booking",
+      "description": "room should be available for booking",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a room manager",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a room manager"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 5396400,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "checking room availability",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "checking room availability"
+                }
+              ],
+              "status": "FAILED",
+              "durationInNanos": 11182300,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "at least one room should be available",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "at least one room should be available"
+                }
+              ],
+              "status": "SKIPPED",
+              "durationInNanos": 0,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "FAILED",
+          "errorMessage": "java.lang.NullPointerException: Cannot invoke \"RoomManager.getAvailableRooms(java.time.LocalDateTime, java.time.LocalDateTime)\" because \"this.roomManager\" is null",
+          "stackTrace": [
+            "ConferenceRoomBookingTest$WhenState.checking_room_availability(ConferenceRoomBookingTest.java:63)",
+            "ConferenceRoomBookingTest$WhenState$ByteBuddy$1TYLzPCK.checking_room_availability$accessor$OvSU3iug(Unknown Source)",
+            "ConferenceRoomBookingTest$WhenState$ByteBuddy$1TYLzPCK$auxiliary$tTldyzaN.call(Unknown Source)",
+            "ConferenceRoomBookingTest$WhenState$ByteBuddy$1TYLzPCK.checking_room_availability(Unknown Source)",
+            "ConferenceRoomBookingTest.room_should_be_available_for_booking(ConferenceRoomBookingTest.java:19)",
+            "java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)",
+            "org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:766)",
+            "org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)",
+            "org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)",
+            "org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)",
+            "org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)",
+            "org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)",
+            "org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)",
+            "org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)",
+            "org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)",
+            "org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)",
+            "org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)",
+            "org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)",
+            "org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)",
+            "org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)",
+            "org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)",
+            "org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)",
+            "org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)",
+            "org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)",
+            "org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)",
+            "org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)",
+            "org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)",
+            "org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)",
+            "java.base/java.util.ArrayList.forEach(ArrayList.java:1596)",
+            "org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)",
+            "org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)",
+            "org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)",
+            "org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)",
+            "java.base/java.util.ArrayList.forEach(ArrayList.java:1596)",
+            "org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)",
+            "org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)",
+            "org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)",
+            "org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)",
+            "org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)",
+            "org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)",
+            "org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)",
+            "org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)",
+            "org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)",
+            "org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)",
+            "org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)",
+            "org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)",
+            "org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)",
+            "org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)",
+            "org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)",
+            "org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)",
+            "org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124)",
+            "org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99)",
+            "org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94)",
+            "org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)",
+            "java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)",
+            "org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)",
+            "org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)",
+            "org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)",
+            "jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)",
+            "org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:198)",
+            "org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:130)",
+            "org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:101)",
+            "org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:61)",
+            "org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)",
+            "org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)",
+            "org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:69)",
+            "worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)",
+            "worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)"
+          ],
+          "durationInNanos": 45458600
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 45458600
+    }
+  ],
+  "tagMap": {}
+}

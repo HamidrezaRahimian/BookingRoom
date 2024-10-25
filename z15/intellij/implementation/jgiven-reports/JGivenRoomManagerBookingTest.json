@@ -1,0 +1,147 @@
+{
+  "className": "JGivenRoomManagerBookingTest",
+  "name": "J Given Room Manager Booking",
+  "scenarios": [
+    {
+      "className": "JGivenRoomManagerBookingTest",
+      "testMethodName": "test_room_booking_scenario",
+      "description": "test room booking scenario",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a room manager",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a room manager"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 10341100,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "an available room named $with capacity $located $with equipment$",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "an available room named"
+                },
+                {
+                  "value": "Room A",
+                  "argumentInfo": {
+                    "argumentName": "name",
+                    "formattedValue": "Room A"
+                  }
+                },
+                {
+                  "value": "capacity"
+                },
+                {
+                  "value": "10",
+                  "argumentInfo": {
+                    "argumentName": "capacity",
+                    "formattedValue": "10"
+                  }
+                },
+                {
+                  "value": "1st Floor",
+                  "argumentInfo": {
+                    "argumentName": "location",
+                    "formattedValue": "1st Floor"
+                  }
+                },
+                {
+                  "value": "equipment"
+                },
+                {
+                  "value": "Projector, Whiteboard",
+                  "argumentInfo": {
+                    "argumentName": "equipment",
+                    "formattedValue": "Projector, Whiteboard"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 5062300,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the room is booked from $to$",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the room is booked from"
+                },
+                {
+                  "value": "2024-10-27T11:10:04.866304400",
+                  "argumentInfo": {
+                    "argumentName": "startTime",
+                    "formattedValue": "2024-10-27T11:10:04.866304400"
+                  }
+                },
+                {
+                  "value": "2024-10-27T13:10:04.866304400",
+                  "argumentInfo": {
+                    "argumentName": "endTime",
+                    "formattedValue": "2024-10-27T13:10:04.866304400"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 6645200,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "booking should succeed with message $",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "booking should succeed with message"
+                },
+                {
+                  "value": "Room Room A successfully booked from 2024-10-27T11:10:04.866304400 to 2024-10-27T13:10:04.866304400.",
+                  "argumentInfo": {
+                    "argumentName": "expectedMessage",
+                    "formattedValue": "Room Room A successfully booked from 2024-10-27T11:10:04.866304400 to 2024-10-27T13:10:04.866304400."
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1439700,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 74088500
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 74088500
+    }
+  ],
+  "tagMap": {}
+}
